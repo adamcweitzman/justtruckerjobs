@@ -19,6 +19,6 @@ angular.module('justtruckerjobs', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanit
   .service('githubContributor', GithubContributorService)
   .service('webDevTec', WebDevTecService)
   .controller('MainController', MainController)
-  .controller('JobsController', MainController)
+  .controller('JobsController', JobsController)
   .directive('acmeNavbar', NavbarDirective)
   .directive('acmeMalarkey', MalarkeyDirective);
