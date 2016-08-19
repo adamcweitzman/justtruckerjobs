@@ -6,7 +6,9 @@
   "dependencies": {
     "bower": "^1.7.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "http-proxy-middleware": "^0.17.1"
+  },
   "directories": {
     "test": "test"
   },
