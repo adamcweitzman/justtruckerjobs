@@ -1,0 +1,18 @@
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <span>Just Trucker Jobs</span>
+    <!-- fill up the space between left and right area -->
+    <md-button>
+    </md-button>
+  </div>
+</md-toolbar>
+<md-content id="jobsContent">
+  <div ng-repeat="job in jobs.fakeData" layout-align="start center">
+    <div layout="row">
+      <h1>{{job.title}}</h1>
+    </div>
+    <div layout="row">
+      <p>{{job.description}}</p>
+    </div>
+  </div>
+</md-content>

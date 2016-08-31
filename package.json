@@ -1,0 +1,30 @@
+{
+  "name": "justtruckerjobs",
+  "version": "1.0.0",
+  "description": "justtruckerjobs",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp-load-plugins": "^1.2.4",
+    "http-proxy-middleware": "^0.17.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamcweitzman/justtruckerjobs.git"
+  },
+  "author": "Adam Weitzman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamcweitzman/justtruckerjobs/issues"
+  },
+  "homepage": "https://github.com/adamcweitzman/justtruckerjobs#readme"
+}
