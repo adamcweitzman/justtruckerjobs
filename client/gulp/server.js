@@ -7,6 +7,8 @@ var conf = require('./conf');
 var browserSync = require('browser-sync');
 var browserSyncSpa = require('browser-sync-spa');
 
+var exec = require('child_process').exec;
+
 var util = require('util');
 
 var proxyMiddleware = require('http-proxy-middleware');
@@ -23,8 +25,12 @@ function browserSyncInit(baseDir, browser) {
 
   var server = {
     baseDir: baseDir,
-    routes: routes
+    routes: routes,
+    middleware: [
+      proxyMiddleware('/api', { target: 'http://localhost:3000' })
+    ]
   };
+
 
   /*
    * You can add a proxy to your backend by uncommenting the line below.
@@ -61,3 +67,9 @@ gulp.task('serve:e2e', ['inject'], function () {
 gulp.task('serve:e2e-dist', ['build'], function () {
   browserSyncInit(conf.paths.dist, []);
 });
+
+gulp.task('rails', function() {
+  exec('rails server');
+});
+
+gulp.task('serve:full-stack', ['rails', 'serve']);
